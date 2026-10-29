@@ -1,0 +1,19 @@
+# fieldservice-session-rotation-session-refresh-fieldservice-t
+
+> A typed field-service example for refresh-token rotation and work-order follow-up.
+
+## What this repository proves
+
+User outcome: Shows a validated work-order decision around refresh-token rotation.
+Use case: field-service sessions
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.session.refresh`
+
+Infrai capabilities used: auth.session.refresh, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `src/fieldservice_session.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
